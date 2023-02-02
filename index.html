@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rich media - 360 Panorama</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+</head>
+<body>	
+  <img id="gif" src="assets/img/giphy.gif" alt="">
+  <img id="banner" src="assets/img/preview.jpg" alt="">
+  <div id="panorama"></div>
+
+  <script>
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "assets/img/panorama.jpeg",
+        "autoLoad": true,
+        "hotSpots": [
+        {
+            "pitch": 9.3,
+            "yaw": 84.9,
+            "type": "info",
+            "text": "Microondas prateado",
+            "URL": "https://zygon.digital/"
+        },
+        {
+            "pitch": 15.47,
+            "yaw": 163.77,
+            "type": "info",
+            "text": "Luminária dourada",
+            "URL": "https://zygon.digital/"
+        },
+        {
+            "pitch": -9.3,
+            "yaw": 130.50,
+            "type": "info",
+            "text": "Pia da cozinha",
+            "URL": "https://zygon.digital/"
+        },
+        {
+            "pitch": -17.89,
+            "yaw": -20,
+            "type": "info",
+            "text": "Porta de entrada",
+            "URL": "https://zygon.digital/"
+        }
+    ]
+    });
+    </script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
